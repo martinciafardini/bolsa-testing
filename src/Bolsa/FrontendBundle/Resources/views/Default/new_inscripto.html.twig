@@ -1,0 +1,77 @@
+{# empty Twig template #}
+{% extends 'BolsaFrontendBundle::layout.html.twig' %}
+
+{% block body -%}
+<div id="wrapper"><!-- #wrapper -->
+	<section id="main"><!-- #main content and sidebar area -->
+
+		<aside id="sidebar1"><!-- sidebar1 -->
+				
+
+		</aside><!-- end of sidebar1 -->
+        
+
+			<section id="content"><!-- #content -->
+  <div class="bluebar"><h3>Inscripci&oacute;n a la bolsa de trabajo</h3></div>
+		<p>A trav&eacute;s de esta secci&oacute;n se podr&aacute;n inscribir a la Bolsa de Trabajo de la Facultad de Inform&aacute;tica.</p>
+		<p>La inscripci&oacute;n es parcial, esto es, solo sera v&aacute;lida una vez que el interesado se presente en la Secretar&iacute;a de Extensi&oacute;n de la Facultad de Inform&aacute;tica, con certificados anal&iacute;ticos de la/s carrera/s que se encuentra inscripto.</p>
+		<p>Los datos solicitados son todos requeridos. El archivo que se debe ingresar debe ser un documento RTF (.rtf) que respete el formato del <a href="documentos/modelo_cv.rtf">modelo que se brinda como Curriculum Vitae</a> a entregar.</p>
+		<p>Recordar que debe incluir en el curr&iacute;culum cantidad de materias aprobadas (con final) por carrera y promedio por carrera (con aplazos).</p>
+		<p>Aseg&uacute;rese que el Curriculum Vitae contenga los datos requridos <a href="trabajo.php?ver=requerimientos">aqu&iacute;</a></p>
+		<div class="bluebar"><h3>Formulario de inscripcion</h3></div>
+                       </section>
+                
+         </section>
+    <center>
+    <form action="{{ path('inscriptos_crear') }}" method="post">
+    {{ form_widget(form) }}
+    <br>
+    <input type="submit" value="Inscribirse" />
+    <input type="reset" value="Limpiar" />
+    </form> <br>
+    </center>
+    <section id="main">
+    <section id="content">
+    <div class="bluebar"><h3>Requerimientos del CV</h3></div>
+		<p>Para poder acceder a este servicio que ofrece la Facultad de Inform&aacute;tica, se deber&aacute;n cumplir al menos los siguientes requisitos:</p>
+		<ul>
+			<li><p>Se deber&aacute; ser alumno de la Facultad de Inform&aacute;tica</p></li>
+			<li><p>Se deber&aacute; entregar un curr&iacute;culum firmado en todas sus p&aacute;ginas y certificados anal&iacute;ticos (de la/s carrera/s en la que est&aacute;n inscriptos) en la Secretaria de Extensi&oacute;n de la Facultad de Inform&aacute;tica, con al menos los siguientes datos:</p></li>
+                        <p><strong>Datos Personales</strong></p>
+			<ul>
+				<li><p>Nombre y Apellido *</p></li>
+				<li><p>Tipo y N&uacute;mero del Documento Nacional de Identidad *</p></li>
+				<li><p>N&uacute;mero de Alumno *</p></li>
+				<li><p>Nacionalidad *</p></li>
+				<li><p>Fecha y lugar de Nacimiento *</p></li>
+				<li><p>Edad *</p></li>
+				<li><p>Domicilio de residencia *</p></li>
+				<li><p>Tel&eacute;fono personal o alguno donde se lo pueda ubicar *</p></li>
+				<li><p>Direcci&oacute;n de Correo Electr&oacute;nico *</p></li>
+			</ul>
+                        <p><strong>Informaci&oacute;n Adicional</strong></p>
+			<ul>
+				<li><p>Experiencia Docente</p></li>
+				<li><p>Experiencia laboral</p></li>
+				<li><p>Experiencia en Investigaciones realizadas</p></li>
+				<li><p>Zona en la que desea desempe&ntilde;ar tareas</p></li>
+				<li><p>Disponibilidad horaria (Part Time o Full Time) *</p></li>
+				<li><p>Conocimientos adicionales *</p></li>
+				<li><p>Carreras en las que esta inscripto *</p></li>
+				<li><p>Manejo de Ingl&eacute;s (lee, habla, escribe, ninguno) *</p></li>
+				<li><p>CANTIDAD Y LISTADO DE MATERIAS APROBADAS (CON FINALES DADOS) POR CARRERA y su nota correspondiente *</p></li>
+				<li><p>PROMEDIO POR CARRERA *</p></li>
+			</ul>
+		</ul>
+                <p><strong>(Los datos que se encuentran marcados con * son OBLIGATORIOS para la inscripci&oacute;n en la Bolsa de Trabajo)</strong></p>
+    </section>
+    </section>
+  </div>
+
+         </div>
+<br>
+<center>
+
+</center>
+<br>
+{% endblock %}

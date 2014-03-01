@@ -1,0 +1,7 @@
+parameters:
+#    bolsa_frontend.example.class: Bolsa\FrontendBundle\Example
+
+services:
+#    bolsa_frontend.example:
+#        class: %bolsa_frontend.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

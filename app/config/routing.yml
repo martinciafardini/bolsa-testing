@@ -1,0 +1,13 @@
+bolsa_frontend:
+    resource: "@BolsaFrontendBundle/Resources/config/routing.yml"
+    prefix:  /
+    #pattern:   /
+    #defaults: { _controller: "BolsaFrontendBundle:Default:index" }
+
+bolsa_ofertas:
+    resource: "@BolsaOfertasBundle/Resources/config/routing.yml"
+    prefix:   /
+
+bolsa_inscriptos:
+    resource: "@BolsaInscriptosBundle/Resources/config/routing.yml"
+    prefix:   /

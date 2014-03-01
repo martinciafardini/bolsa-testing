@@ -1,0 +1,7 @@
+bolsa_inscriptos_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: BolsaInscriptosBundle:Default:index }
+    
+bolsa_inscriptos_registro:
+    pattern: /registro
+    defaults: { _controller: BolsaInscriptosBundle:Default:new_preinscripto }

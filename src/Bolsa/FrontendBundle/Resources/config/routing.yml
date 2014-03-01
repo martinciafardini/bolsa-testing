@@ -1,0 +1,15 @@
+bolsa_frontend_homepage:
+    pattern:  /
+    defaults: { _controller: BolsaFrontendBundle:Default:index }
+    
+frontend_registro:
+    pattern: /registro
+    defaults: { _controller: BolsaFrontendBundle:Default:new_inscripto }
+    
+inscripto_new:
+ pattern: /inscripto/new
+ defaults: { _controller: BolsaFrontendBundle:Default:new_inscripto }
+ 
+inscriptos_crear:
+  pattern: /inscripto/crear
+  defaults: { _controller: BolsaFrontendBundle:Default:crear_inscripto }

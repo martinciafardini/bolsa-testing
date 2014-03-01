@@ -1,0 +1,52 @@
+{# empty Twig template #}
+{% extends 'BolsaInscriptosBundle::layout.html.twig' %}
+
+{% block body -%}
+
+    
+ 
+<nav>
+<div class="menu">
+    <ul>
+    
+    <li><a href="{{ path('bolsa_inscriptos') }}">Inicio</a></li>
+    <li><a href="#">Inscriptos</a></li>
+    <li><a href="#">Preinscriptos</a></li>
+    <li><a href="#">Ofertas</a></li>
+    <li><a href="#">Inscribirse</a></li>
+	<li><a href="#">Ayuda</a></li>
+    </ul>
+	</div>
+    </nav>
+	<div id="wrapper"><!-- #wrapper -->
+	<section id="main"><!-- #main content and sidebar area -->
+
+		<aside id="sidebar1"><!-- sidebar1 -->
+				
+
+		</aside><!-- end of sidebar1 -->
+        
+
+			<section id="content"><!-- #content -->
+
+			
+                 
+              </div>
+        </section>
+
+		<aside id="sidebar2"><!-- sidebar2 -->
+			
+
+		</aside><!-- end of sidebar -->
+
+	</section><!-- end of #main content and sidebar-->
+</div>
+<center>
+<form action="{{ path('bolsa_inscriptos_registro') }}" method="post">
+    {{ form_widget(form) }}
+    <br>
+    <input type="submit" value="Inscribirse" />
+    <input type="reset" value="Limpiar" />
+</form> <br>
+</center>		
+ {% endblock %}

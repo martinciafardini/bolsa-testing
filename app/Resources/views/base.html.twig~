@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Extensión - Facultad de Informática - UNLP{% endblock %}</title>
+            
+       <link href="{{ asset('bundles/bolsainscriptos/css/styles.css') }}" rel="stylesheet" type="text/css" media="all" /> 
+       
+       <style type="text/css" media="screen">
+		h1.fontface {font: 32px/38px 'MichromaRegular', Arial, sans-serif;letter-spacing: 0;}
+
+		p.style1 {font: 18px/27px 'MichromaRegular', Arial, sans-serif;}
+		
+		
+		@font-face {
+    font-family: 'MichromaRegular';
+    src: url('Michroma-webfont.eot');
+    src: url('Michroma-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Michroma-webfont.woff') format('woff'),
+         url('Michroma-webfont.ttf') format('truetype'),
+         url('Michroma-webfont.svg#MichromaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	</style>
+
+    </head>
+    <body>
+        <header>
+                  <div class="container1">
+       
+         <!--start title-->
+        <img src="{{ asset('bundles/bolsainscriptos/images/logo_sistema_de_aulas.png') }}" width="504" height="100" alt="Linti-Sec-Ext">
+        <h1 class="fontface" id="title">Bolsa de Trabajo</h1>
+	<!--end title-->
+
+  </div>
+
+    
+	</header>
+	<!--end header-->
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+  <footer>
+		<div class="container1">
+		<section id="footer-area">
+
+			<section id="footer-outer-block">
+					<aside class="footer-segment">
+							<h4>Noticias</h4>
+								<ul>
+									<li><a href="#">UNLP</a></li>
+									<li><a href="#">Facultad de Informática</a></li>
+								</ul>
+					</aside><!-- end of #first footer segment -->
+
+
+					<aside class="footer-segment">
+							<h4>Contacto</h4>
+								<ul>
+									<li><a href="#">Extensión</a></li>
+									<li><a href="#">Job Opportunities</a></li>
+								</ul>
+					</aside><!-- end of #third footer segment -->
+					
+					
+
+			</section><!-- end of footer-outer-block -->
+
+		</section><!-- end of footer-area -->
+		</div>
+	</footer>
+    </body>
+</html>
+
+
