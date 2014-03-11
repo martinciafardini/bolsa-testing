@@ -1,0 +1,7 @@
+bolsa_backend_homepage:
+    pattern:  /
+    defaults: { _controller: BolsaBackendBundle:Default:index }
+    
+listar_preinscriptos:
+    pattern: /preinscriptos_list
+    defaults: { _controller: BolsaBackendBundle:Inscriptos:listarPreinscriptos }

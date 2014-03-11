@@ -1,0 +1,30 @@
+backend_inscriptos:
+    pattern:  /
+    defaults: { _controller: "BolsaInscriptosBundle:Inscriptos:index" }
+
+backend_inscriptos_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BolsaInscriptosBundle:Inscriptos:show" }
+
+backend_inscriptos_new:
+    pattern:  /new
+    defaults: { _controller: "BolsaInscriptosBundle:Inscriptos:new" }
+
+backend_inscriptos_create:
+    pattern:  /create
+    defaults: { _controller: "BolsaInscriptosBundle:Inscriptos:create" }
+    requirements: { _method: post }
+
+backend_inscriptos_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BolsaInscriptosBundle:Inscriptos:edit" }
+
+backend_inscriptos_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BolsaInscriptosBundle:Inscriptos:update" }
+    requirements: { _method: post|put }
+
+backend_inscriptos_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BolsaInscriptosBundle:Inscriptos:delete" }
+    requirements: { _method: post|delete }

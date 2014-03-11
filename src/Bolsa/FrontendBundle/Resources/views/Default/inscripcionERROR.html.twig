@@ -1,0 +1,31 @@
+{% extends 'BolsaFrontendBundle::layout.html.twig' %}
+
+{% block body -%}
+
+	<div id="wrapper"><!-- #wrapper -->
+	<section id="main"><!-- #main content and sidebar area -->
+
+		<aside id="sidebar1"><!-- sidebar1 -->
+				
+
+		</aside><!-- end of sidebar1 -->
+        
+
+			<section id="content"><!-- #content -->
+                            <h3>Ha ocurrido un error, es posible que ya se encuentre registrado. Chequee si la dirección de email ingresada es correcta.</h3>
+                            <form name="finInscripcion" action="{{ path('bolsa_frontend_homepage') }}" method="POST">
+                              <input type="submit" value="Finalizar"/>
+                            </form>
+			</section>
+
+               <!--    <a href="#" class="button"> Leer mas </a> -->
+              </div>
+
+		<aside id="sidebar2"><!-- sidebar2 -->
+			
+
+		</aside><!-- end of sidebar -->
+
+		
+ {% endblock %}
+

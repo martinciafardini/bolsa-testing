@@ -1,0 +1,30 @@
+backend_role:
+    pattern:  /
+    defaults: { _controller: "BolsaInscriptosBundle:Role:index" }
+
+backend_role_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BolsaInscriptosBundle:Role:show" }
+
+backend_role_new:
+    pattern:  /new
+    defaults: { _controller: "BolsaInscriptosBundle:Role:new" }
+
+backend_role_create:
+    pattern:  /create
+    defaults: { _controller: "BolsaInscriptosBundle:Role:create" }
+    requirements: { _method: post }
+
+backend_role_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BolsaInscriptosBundle:Role:edit" }
+
+backend_role_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BolsaInscriptosBundle:Role:update" }
+    requirements: { _method: post|put }
+
+backend_role_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BolsaInscriptosBundle:Role:delete" }
+    requirements: { _method: post|delete }

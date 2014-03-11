@@ -1,0 +1,30 @@
+backend_preinscriptos:
+    pattern:  /
+    defaults: { _controller: "BolsaInscriptosBundle:Preinscriptos:index" }
+
+backend_preinscriptos_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "BolsaInscriptosBundle:Preinscriptos:show" }
+
+backend_preinscriptos_new:
+    pattern:  /new
+    defaults: { _controller: "BolsaInscriptosBundle:Preinscriptos:new" }
+
+backend_preinscriptos_create:
+    pattern:  /create
+    defaults: { _controller: "BolsaInscriptosBundle:Preinscriptos:create" }
+    requirements: { _method: post }
+
+backend_preinscriptos_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "BolsaInscriptosBundle:Preinscriptos:edit" }
+
+backend_preinscriptos_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "BolsaInscriptosBundle:Preinscriptos:update" }
+    requirements: { _method: post|put }
+
+backend_preinscriptos_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "BolsaInscriptosBundle:Preinscriptos:delete" }
+    requirements: { _method: post|delete }

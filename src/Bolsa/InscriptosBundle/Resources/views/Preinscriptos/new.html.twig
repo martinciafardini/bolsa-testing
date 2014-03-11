@@ -1,0 +1,15 @@
+{% extends 'BolsaBackendBundle::layout.html.twig' %}
+
+{% block body -%}
+    <h1>Preinscriptos creation</h1>
+
+    {{ form(form) }}
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('backend_preinscriptos') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}

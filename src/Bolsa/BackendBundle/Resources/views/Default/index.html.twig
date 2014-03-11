@@ -1,0 +1,33 @@
+{% extends 'BolsaBackendBundle::layout.html.twig' %}
+
+
+{% block body -%}
+
+	<div id="wrapper"><!-- #wrapper -->
+	<section id="main"><!-- #main content and sidebar area -->
+
+		<aside id="sidebar1"><!-- sidebar1 -->
+				
+
+		</aside><!-- end of sidebar1 -->
+        
+
+			<section id="content"><!-- #content -->
+                            <h3>Welcome {{ user }}</h3>
+                            <h3>Backend de la aplicacion - Esta pagina debería estar restringida!</h3>
+                            <form name="finInscripcion" action="{{ path('bolsa_frontend_homepage') }}" method="POST">
+                              
+                            </form>
+			</section>
+
+               <!--    <a href="#" class="button"> Leer mas </a> -->
+              </div>
+
+		<aside id="sidebar2"><!-- sidebar2 -->
+			
+
+		</aside><!-- end of sidebar -->
+
+		
+ {% endblock %}
+

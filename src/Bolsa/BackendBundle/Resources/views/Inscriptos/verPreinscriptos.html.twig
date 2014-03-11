@@ -1,0 +1,29 @@
+{% extends 'BolsaBackendBundle::layout.html.twig' %}
+
+
+{% block body -%}
+
+<h1>Listado de Preinscriptos</h1>
+{% if not preinscriptos  %}
+NO hay Preinscriptos aún
+{% elseif preinscriptos %}
+<table border="1">
+    <tr>
+        <th>Apellido</th>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <th>Habilitado</th>
+    </tr>
+    {% for item in preinscriptos %}
+    <tr>
+        <td>{{ item.apellido }}</td>
+        <td>{{ item.nombre }}</td>
+        <td>{{ item.dni }}</td>
+        <td>{{ item.confirmado }}</td>
+    </tr>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+<br>
+{% endblock %}

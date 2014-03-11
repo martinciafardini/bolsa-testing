@@ -1,0 +1,52 @@
+
+{% extends 'BolsaBackendBundle::layout.html.twig' %}
+
+{% block body -%}
+    <h1>Inscriptos list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+              
+                <th>Apellido</th>
+                <th>Nombre</th>
+                <th>Dni</th>
+                
+                <th>Email</th>
+              
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                
+                <td>{{ entity.apellido }}</td>
+                <td>{{ entity.nombre }}</td>
+                <td>{{ entity.dni }}</td>
+           
+                <td>{{ entity.email }}</td>
+               
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('backend_inscriptos_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('backend_inscriptos_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('backend_inscriptos_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}
