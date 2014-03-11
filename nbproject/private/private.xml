@@ -3,16 +3,32 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/Test1/app/Resources/views/base.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/layout.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/Inscriptos/new.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Entity/Inscriptos.php</file>
+            <file>file:/var/www/Test1/src/Bolsa/BackendBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/Role/index.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/BackendBundle/Resources/views/Inscriptos/verPreinscriptos.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/config/routing.yml</file>
+            <file>file:/var/www/Test1/app/config/security.yml</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/config/routing/inscriptos.yml</file>
+            <file>file:/var/www/Test1/src/Bolsa/BackendBundle/Controller/DefaultController.php</file>
+            <file>file:/var/www/Test1/src/Bolsa/BackendBundle/Resources/views/layout.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Form/InscriptosType.php</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/Role/new.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/config/routing/role.yml</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/Inscriptos/edit.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/Role/edit.html.twig</file>
             <file>file:/var/www/Test1/src/Bolsa/FrontendBundle/Controller/DefaultController.php</file>
-            <file>file:/var/www/Test1/src/Bolsa/FrontendBundle/Resources/views/Default/new_inscripto.html.twig</file>
-            <file>file:/var/www/Test1/src/Bolsa/FrontendBundle/Resources/views/layout.html.twig</file>
-            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Entity/Preinscriptos.php</file>
-            <file>file:/var/www/Test1/src/Bolsa/FrontendBundle/Resources/config/routing.yml</file>
-            <file>file:/var/www/Test1/src/Bolsa/FrontendBundle/Resources/views/Default/index.html.twig</file>
-            <file>file:/var/www/Test1/vendor/symfony/symfony/src/Symfony/Component/Filesystem/README.md</file>
-            <file>file:/var/www/Test1/web/index.php</file>
-            <file>file:/var/www/Test1/src/Bolsa/FrontendBundle/Form/InscripcionType.php</file>
+            <file>file:/var/www/Test1/src/Bolsa/BackendBundle/Resources/views/Default/login.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/Role/show.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/Inscriptos/index.html.twig</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Controller/InscriptosController.php</file>
+            <file>file:/var/www/Test1/app/config/config.yml</file>
+            <file>file:/var/www/Test1/app/config/routing.yml</file>
+            <file>file:/var/www/Test1/src/Bolsa/BackendBundle/Resources/config/routing.yml</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Entity/Role.php</file>
+            <file>file:/var/www/Test1/src/Bolsa/InscriptosBundle/Resources/views/Inscriptos/show.html.twig</file>
         </group>
     </open-files>
 </project-private>

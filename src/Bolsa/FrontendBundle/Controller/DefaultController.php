@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 
 
+
 class DefaultController extends Controller
 {
     public function indexAction()
@@ -36,14 +37,19 @@ class DefaultController extends Controller
         if($request->getMethod() == 'POST'){
             $form->handleRequest($request);//este metodo carga el objeto articulo con lo que viene en el request
             if($form->isValid()){
+                
                 $em = $this->getDoctrine()->getEntityManager();
+                //$inscripto->setAviso(new \DateTime());
+                //$inscripto->setConfirmado(0);
                 $em->persist($inscripto);
                 $em->flush();
                 //return new Response('inscripcion exitosa!');
                 return $this->render("BolsaFrontendBundle:Default:inscripcionOk.html.twig", array());
             }
-            else {return new Response('ERROR en la inscripcion!');}
-        }   
+            else {
+                return $this->render("BolsaFrontendBundle:Default:inscripcionERROR.html.twig", array());
+            }   
         
+    }
     }
 }

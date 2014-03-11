@@ -11,7 +11,10 @@ class PreinscriptosType extends AbstractType
         $builder->add('nombre')
                 ->add('apellido')
                 ->add('dni')
-                ->add('email');
+                ->add('email')
+                ->add('confirmado')
+                ->add('aviso');
+        
     }
     public function getName()
     {

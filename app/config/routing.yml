@@ -1,3 +1,7 @@
+bolsa_backend:
+    resource: "@BolsaBackendBundle/Resources/config/routing.yml"
+    prefix:   /backend
+
 bolsa_frontend:
     resource: "@BolsaFrontendBundle/Resources/config/routing.yml"
     prefix:  /
@@ -11,3 +15,25 @@ bolsa_ofertas:
 bolsa_inscriptos:
     resource: "@BolsaInscriptosBundle/Resources/config/routing.yml"
     prefix:   /
+    
+login:
+    pattern: /login
+    defaults: { _controller: BolsaBackendBundle:Default:login }
+    
+login_check:
+    pattern: /login_check
+    
+logout:
+    pattern: /logout
+    
+BolsaInscriptosBundle_inscriptos:
+        resource: "@BolsaInscriptosBundle/Resources/config/routing/inscriptos.yml"
+        prefix:   /backend/inscriptos
+        
+BolsaInscriptosBundle_backend_role:
+        resource: "@BolsaInscriptosBundle/Resources/config/routing/role.yml"
+        prefix:   /backend/role
+        
+BolsaInscriptosBundle_backend_preinscriptos:
+        resource: "@BolsaInscriptosBundle/Resources/config/routing/preinscriptos.yml"
+        prefix:   /backend/preinscriptos

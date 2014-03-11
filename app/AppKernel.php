@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Bolsa\InscriptosBundle\BolsaInscriptosBundle(),
             new Bolsa\OfertasBundle\BolsaOfertasBundle(),
             new Bolsa\FrontendBundle\BolsaFrontendBundle(),
+            new Bolsa\BackendBundle\BolsaBackendBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

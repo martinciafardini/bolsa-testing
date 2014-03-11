@@ -1,15 +1,22 @@
 <?php
 
 namespace Bolsa\InscriptosBundle\Entity;
-use Symfony\Component\Validator\Constraints as Assert;
 
+use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
+
+use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Bridge\Doctrine\Validator\Constraints as DoctrineAssert;
+//use Symfony\Component\Validator\ExecutionContextInterface;
+
 
 /**
  * Preinscriptos
  *
  * @ORM\Table()
  * @ORM\Entity(repositoryClass="Bolsa\InscriptosBundle\Entity\PreinscriptosRepository")
+ * @DoctrineAssert\UniqueEntity("dni")
+
  */
 class Preinscriptos
 {
@@ -33,8 +40,7 @@ class Preinscriptos
      * @var string
      *
      * @ORM\Column(name="nombre", type="string", length=255)
-     * @Assert\NotNull()
-     * @Assert\NotBlank()
+     * @Assert\NotNull(message="Debe escribir un nombre")
      */
     private $nombre;
 
@@ -52,15 +58,15 @@ class Preinscriptos
      *
      * @ORM\Column(name="email", type="string", length=255)
      * @Assert\NotNull()
-     * @Assert\NotBlank()
+     * @Assert\Email()
      */
     private $email;
 
     /**
      * @var boolean
      *
-     * @ORM\Column(name="confirmado", type="boolean")
-     * @Assert\Email()
+     * @ORM\Column(name="confirmado", type="boolean", nullable=true)
+     * 
      */
     private $confirmado;
 
@@ -70,6 +76,12 @@ class Preinscriptos
      * @ORM\Column(name="aviso", type="datetime")
      */
     private $aviso;
+    
+    
+    public function __construct(){
+        $this->setConfirmado(FALSE);
+        $this->setAviso(new \DateTime());
+    }
 
 
     /**
